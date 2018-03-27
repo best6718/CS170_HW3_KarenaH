@@ -826,3 +826,33 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 293ms (Views: 278.6ms | ActiveRecord: 1.8ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aladdin"], ["rating", "G"], ["release_date", "1992-11-25 00:00:00"], ["created_at", "2018-03-27 06:02:43.700341"], ["updated_at", "2018-03-27 06:02:43.700341"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "When Harry Met Sally"], ["rating", "R"], ["release_date", "1989-07-21 00:00:00"], ["created_at", "2018-03-27 06:02:43.719311"], ["updated_at", "2018-03-27 06:02:43.719311"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Help"], ["rating", "PG-13"], ["release_date", "2011-08-10 00:00:00"], ["created_at", "2018-03-27 06:02:43.733480"], ["updated_at", "2018-03-27 06:02:43.733480"]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Raiders of the Lost Ark"], ["rating", "PG"], ["release_date", "1981-06-12 00:00:00"], ["created_at", "2018-03-27 06:02:43.746048"], ["updated_at", "2018-03-27 06:02:43.746048"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 144.91.203.124 at 2018-03-27 06:03:11 +0000
+Cannot render console from 144.91.203.124! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.203.124 at 2018-03-27 06:03:11 +0000
+Cannot render console from 144.91.203.124! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 283ms (Views: 268.1ms | ActiveRecord: 1.8ms)
+
+
