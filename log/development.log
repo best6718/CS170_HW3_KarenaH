@@ -856,3 +856,15 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 283ms (Views: 268.1ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/" for 144.91.203.124 at 2018-03-27 07:52:27 +0000
+Cannot render console from 144.91.203.124! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.203.124 at 2018-03-27 07:52:28 +0000
+Cannot render console from 144.91.203.124! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 302ms (Views: 285.0ms | ActiveRecord: 1.7ms)
+
+
