@@ -1440,3 +1440,15 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 144.91.244.150 at 2018-03-29 16:52:14 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-03-29 16:52:14 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (29.3ms)
+Completed 200 OK in 329ms (Views: 318.4ms | ActiveRecord: 1.7ms)
+
+
