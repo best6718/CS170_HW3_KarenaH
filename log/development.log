@@ -1452,3 +1452,316 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 329ms (Views: 318.4ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/" for 144.91.244.150 at 2018-04-09 00:14:13 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 00:14:14 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 862ms (Views: 847.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 144.91.244.150 at 2018-04-09 00:14:20 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 00:14:20 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:14:22 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:14:23 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=nwB00gAAAAAA5NnGAAABYqfA9ec&oauth_verifier=oHc5WccO8Krf0PiPHNWg6kABTlur1cMo" for 144.91.244.150 at 2018-04-09 00:14:45 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for SessionsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/auth/twitter/callback?oauth_token=nwB00gAAAAAA5NnGAAABYqfA9ec&oauth_verifier=oHc5WccO8Krf0PiPHNWg6kABTlur1cMo" for 144.91.244.150 at 2018-04-09 00:15:55 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+OAuth::Unauthorized (401 Authorization Required):
+  
+oauth (0.5.4) lib/oauth/consumer.rb:236:in `token_request'
+oauth (0.5.4) lib/oauth/tokens/request_token.rb:20:in `get_access_token'
+omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:56:in `callback_phase'
+omniauth (1.8.1) lib/omniauth/strategy.rb:236:in `callback_call'
+omniauth (1.8.1) lib/omniauth/strategy.rb:188:in `call!'
+omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.8.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 144.91.244.150 at 2018-04-09 00:19:17 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 00:19:18 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (209.3ms)
+Completed 200 OK in 846ms (Views: 837.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:19:20 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:19:21 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 144.91.244.150 at 2018-04-09 00:19:28 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 00:19:29 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (181.9ms)
+Completed 200 OK in 203ms (Views: 201.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:19:32 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 00:19:32 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=7S3XHQAAAAAA5NnGAAABYqfFrK4&oauth_verifier=ketXPX0cpyQkYw0jBzXUpjkI2cpjyebp" for 144.91.244.150 at 2018-04-09 00:19:33 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"7S3XHQAAAAAA5NnGAAABYqfFrK4", "oauth_verifier"=>"ketXPX0cpyQkYw0jBzXUpjkI2cpjyebp"}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `attr_protected' for Movieuser(Table doesn't exist):Class
+Did you mean?  attr_reader):
+  
+app/models/movieuser.rb:18:in `<class:Movieuser>'
+app/models/movieuser.rb:13:in `<top (required)>'
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:07:16 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:07:16 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 291ms (Views: 278.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:07:19 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:07:19 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:07:20 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:07:31 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=XZdXKwAAAAAA5NnGAAABYqgoiHA&oauth_verifier=RMdO1BZeRwert3JDwqCIQOcvxjTDNoeo" for 144.91.244.150 at 2018-04-09 02:07:52 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"XZdXKwAAAAAA5NnGAAABYqgoiHA", "oauth_verifier"=>"RMdO1BZeRwert3JDwqCIQOcvxjTDNoeo"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'movieusers'):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:10:50 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:10:50 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (29.5ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:22:56 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:22:57 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 216ms (Views: 206.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:23:00 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:23:00 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:23:02 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:23:03 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=PJNkfwAAAAAA5NnGAAABYqg2wE8&oauth_verifier=F63qHsuW1go5KUN7pEN1kZw0YVFeIGTs" for 144.91.244.150 at 2018-04-09 02:23:04 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"PJNkfwAAAAAA5NnGAAABYqg2wE8", "oauth_verifier"=>"F63qHsuW1go5KUN7pEN1kZw0YVFeIGTs"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'movieusers'):
+  
+app/controllers/sessions_controller.rb:8:in `create'
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:25:03 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:25:04 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:28:42 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:28:42 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 214ms (Views: 204.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:28:57 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:28:57 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:29:03 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:29:03 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:29:08 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:29:08 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=M-DMbwAAAAAA5NnGAAABYqg8VAo&oauth_verifier=fpCG1I8OaUIVyVBu1SWYKfycCDgCDMcU" for 144.91.244.150 at 2018-04-09 02:29:09 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"M-DMbwAAAAAA5NnGAAABYqg8VAo", "oauth_verifier"=>"fpCG1I8OaUIVyVBu1SWYKfycCDgCDMcU"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'movieusers'):
+  
+app/controllers/sessions_controller.rb:8:in `create'
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:30:39 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:30:39 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (27.6ms)
+Completed 200 OK in 305ms (Views: 295.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 144.91.244.150 at 2018-04-09 02:30:41 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/movies" for 144.91.244.150 at 2018-04-09 02:30:41 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:30:47 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter" for 144.91.244.150 at 2018-04-09 02:30:47 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/auth/twitter/callback?oauth_token=bAqBqgAAAAAA5NnGAAABYqg91-g&oauth_verifier=MdB8JyosUI1UiWYLw6yiALYO6nVj3fWC" for 144.91.244.150 at 2018-04-09 02:30:49 +0000
+Cannot render console from 144.91.244.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"bAqBqgAAAAAA5NnGAAABYqg91-g", "oauth_verifier"=>"MdB8JyosUI1UiWYLw6yiALYO6nVj3fWC"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'movieusers'):
+  
+app/controllers/sessions_controller.rb:8:in `create'

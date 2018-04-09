@@ -11,11 +11,11 @@
 #
 
 class Movieuser < ApplicationRecord
-    has_many :reviews       #allows us to be able to read all the reviews for a specific movie! 
+  has_many :reviews       #allows us to be able to read all the reviews for a specific movie! 
     
     # Edit app/models/moviegoer.rb to look like this:
 
-  attr_protected :uid, :provider, :name # see text for explanation
+  attr_reader :uid, :provider, :name # see text for explanation
   def self.create_with_omniauth(auth)
     Movieuser.create!(
       :provider => auth["provider"],
